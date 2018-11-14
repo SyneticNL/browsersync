@@ -18,7 +18,7 @@ module.exports = (config) => {
     notifier.notify({
       title: title,
       message: `on ${ip}: ${port}\nClick to launch browser`,
-      icon: config.logo ? path.resolve(`${rocess.cwd()}/${config.basepath}/${config.logo}`) : '',
+      icon: config.logo ? path.resolve(`${process.cwd()}/${config.basepath}/${config.logo}`) : '',
       sound: config.sound ? config.sound : false,
       wait: true
     });
